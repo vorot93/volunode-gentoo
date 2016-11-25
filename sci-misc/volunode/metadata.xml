@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>artem@vorotnikov.me</email>
+    <name>Artem Vorotnikov</name>
+  </maintainer>
+  <longdescription lang="en">
+    Volunode is a Unix client for Berkeley Open Infrastructure for Network Computing, platform for distributed computing using volunteered computer resources.
+  </longdescription>
+  <upstream>
+    <remote-id type="github">boinc-next/volunode</remote-id>
+  </upstream>
+</pkgmetadata>
