@@ -31,6 +31,7 @@ REQUIRED_USE="^^ ( curl_ssl_libressl curl_ssl_openssl ) "
 # If the libcurl ssl backend changes, boinc should be recompiled.
 RDEPEND="
 	>=app-misc/ca-certificates-20080809
+        sci-misc/boinc-app-api
 	net-misc/curl[-curl_ssl_gnutls(-),curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-),-curl_ssl_polarssl(-)]
 	sys-apps/util-linux
 	sys-libs/zlib
