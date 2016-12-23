@@ -23,7 +23,7 @@ esac
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86"
-IUSE="curl_ssl_libressl +curl_ssl_openssl static-libs"
+IUSE="curl_ssl_libressl +curl_ssl_openssl debug static-libs"
 
 REQUIRED_USE="^^ ( curl_ssl_libressl curl_ssl_openssl ) "
 
@@ -48,7 +48,10 @@ src_prepare() {
 }
 
 src_configure() {
-	econf
+	local NULL
+	econf \
+	    $(use_enable debug logtrace) \
+	    ${NULL}
 }
 
 src_install() {
