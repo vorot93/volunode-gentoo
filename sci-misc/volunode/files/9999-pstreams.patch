@@ -1,0 +1,26 @@
+From 72296254a193fd67260dd31669d1c139e7a9c18b Mon Sep 17 00:00:00 2001
+From: Artem Vorotnikov <artem@vorotnikov.me>
+Date: Sat, 24 Dec 2016 18:56:02 +0300
+Subject: [PATCH 1/1] Changed pstreams header location
+
+Signed-off-by: Artem Vorotnikov <artem@vorotnikov.me>
+---
+ client/main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/client/main.cpp b/client/main.cpp
+index ba2f40d330..3810c7e15d 100644
+--- a/client/main.cpp
++++ b/client/main.cpp
+@@ -31,7 +31,7 @@
+ #include <csignal>
+ #include <iostream>
+ 
+-#include <pstreams/pstream.h>
++#include <pstream.h>
+ 
+ #include "diagnostics.h"
+ #include "error_numbers.h"
+-- 
+2.11.0
+

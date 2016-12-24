@@ -38,12 +38,14 @@ RDEPEND="
 	dev-cpp/glibmm
 "
 DEPEND="${RDEPEND}
+	dev-cpp/pstreams
 	sys-devel/gettext
 "
 
 src_prepare() {
 	default
 
+	epatch "${FILESDIR}/${PV}-pstreams.patch"
 	eautoreconf
 }
 
